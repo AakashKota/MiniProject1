@@ -22,7 +22,7 @@ function Home() {
     <div className="home">
       <Slider/>
    
-      {loading ? (
+      {/* {loading ? (
         <Segment className="home__segment">
           <Dimmer active inverted>
             <Loader size="large" className="home__loaderMessage">
@@ -48,7 +48,7 @@ function Home() {
             })}
           </Grid>
         </Container>
-      )}
+      )} */}
     </div>
   );
 }
