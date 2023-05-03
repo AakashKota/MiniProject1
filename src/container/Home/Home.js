@@ -5,6 +5,7 @@ import "./Home.css";
 import { db } from "../../Firebase/FirebaseConfig";
 import Slider from "./../../components/slider/Slider"
 import AdminOnlyRoute from "../../components/adminOnlyRoute/AdminOnlyRoute";
+import HomeIcons from "./HomeIcons/HomeIcons";
 
 function Home() {
   const [product, setProduct] = useState([]);
@@ -21,6 +22,7 @@ function Home() {
   return (
     <div className="home">
       <Slider/>
+      <HomeIcons/>
    
       {/* {loading ? (
         <Segment className="home__segment">
@@ -49,7 +51,8 @@ function Home() {
           </Grid>
         </Container>
       )} */}
-    </div>
+         
+      </div>
   );
 }
 
