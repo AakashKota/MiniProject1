@@ -19,6 +19,8 @@ import Shoes from "./components/Product/Shoes/Shoes";
 import Cameras from "./components/Product/Cameras/Cameras";
 import Laptops from "./components/Product/Laptops/Laptops";
 import Mobiles from "./components/Product/Mobiles/Mobiles";
+import Register from "./container/Signup/Signup";
+
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -50,6 +52,7 @@ function App() {
           <Route path="/checkout" component={Checkout}></Route>          
           <Route path="/contact" component={Contact}></Route>
           <Route path="/product-details/:id" component={ProductDetails}></Route>
+          <Route path="/register" component={Register}></Route>
           <Route path="/shoes" component={Shoes}></Route>
           <Route path="/mobiles" component={Mobiles}></Route>
           <Route path="/laptops" component={Laptops}></Route>

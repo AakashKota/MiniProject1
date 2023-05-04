@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Container, Card, Form, Button, Grid } from "semantic-ui-react";
 import "./Login.css";
 import { auth } from "../../Firebase/FirebaseConfig";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+
 
 function Login() {
   //router
@@ -58,6 +59,13 @@ function Login() {
                 <Button color="green" type="submit" onClick={loginUser}>
                   Login
                 </Button>
+                <p>
+                   create account <a href="./Signup.js"></a>
+                </p>
+                <span className={styles.register}>
+                <p>Don't have an account?</p>
+                &nbsp;<Link to="/register">Register</Link>
+                </span>
               
             
               </Form>

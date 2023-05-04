@@ -1,3 +1,6 @@
+.home-wrapper-1{
+    padding-top: 30px;
+}
 .banner_container{
     width: 85%;
     display: flex;
@@ -27,8 +30,9 @@
     margin-top: 10px;
  }
 .main-banner-content {
-    top: 15%;
-    left: 5%;
+    top: 25%;
+    
+    left: 35%;
     }
     .main-banner-content h4 {
     font-size: 16px;
@@ -50,10 +54,12 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.4;
+
     }
     .small-banner-content {
-       top: 15%;
-       left: 5%;
+        top: 15%;
+    
+        left: 35%;
        }
        .small-banner-content h4 {
        font-size: 16px;

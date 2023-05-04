@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cameras = () => {
   return (
-    <div>Cameras</div>
+    <div><h2>Cameras</h2></div>
   )
 }
 
