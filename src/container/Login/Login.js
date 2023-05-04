@@ -59,13 +59,13 @@ function Login() {
                 <Button color="green" type="submit" onClick={loginUser}>
                   Login
                 </Button>
-                <p>
+                {/* <p>
                    create account <a href="./Signup.js"></a>
                 </p>
                 <span className={styles.register}>
                 <p>Don't have an account?</p>
                 &nbsp;<Link to="/register">Register</Link>
-                </span>
+                </span> */}
               
             
               </Form>

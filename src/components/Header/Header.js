@@ -60,12 +60,12 @@ function Header() {
           </Link>
         </Menu.Menu>
       </Menu>  
-      <div className="product-types">
+      {/* <div className="product-types">
         <Link to="/mobiles"><button>Mobiles</button></Link>
         <Link to="/laptops" ><button>Laptops</button></Link>
         <Link to="/cameras" ><button>Cameras</button></Link>
         <Link to= "/shoes"><button>Shoes</button></Link>
-        </div>    
+        </div>     */}
     </div>
 
   );
