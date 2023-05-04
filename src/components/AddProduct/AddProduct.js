@@ -39,7 +39,7 @@ function AddProduct() {
 
   const handleUpload = () => {
     const uploadTask = storage.ref(`images/${image.name}`).put(image);
-  
+
     uploadTask.on(
       "state_changed",
       (snapshot) => {
@@ -61,17 +61,7 @@ function AddProduct() {
           .getDownloadURL()
           .then((url) => {
             //post image inside data
-            // const productData = {
-            //   title,
-            //   price,
-            //   rating,
-            //   imageUrl: url,
-            //   description,
-            //   category,
-            // };
-            // Add product to respective category collection
-            if (category === "Mobiles") {
-             db.collection("Mobiles").add({
+            db.collection("Products").add({
               title,
               price,
               rating,
@@ -79,56 +69,6 @@ function AddProduct() {
               category,
               description,
             });
-            } else if (category === "Laptops") {
-             db.collection("Laptops").add({
-              title,
-              price,
-              rating,
-              imageUrl: url,
-              category,
-              description,
-            });
-            } else if (category === "Shoes") {
-              db.collection("Shoes").add({
-                title,
-                price,
-                rating,
-                imageUrl: url,
-                category,
-                description,
-              });
-            } else if (category === "Cameras") {
-              db.collection("Cameras").add({   
-                title,
-                price,
-                rating,
-                imageUrl: url,
-                category,
-                description,
-              });
-            }
-  //           setProgress(0);
-  //           setTitle("");
-  //           setPrice("");
-  //           setCategory("");
-  //           setRating("");
-  //           setImage(null);
-  //           setDescripton("");
-  //           history.push("/");
-  //         });
-  //     }
-  //   );
-  // };
-
-            
-            // db.collection("Products").add({
-            //   title,
-            //   price,
-            //   rating,
-            //   imageUrl: url,
-            //   category,
-            //   description,
-            // });
             setProgress(0);
             setTitle("");
             setPrice();
