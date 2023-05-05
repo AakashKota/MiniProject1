@@ -19,6 +19,8 @@ import Shoes from "./components/Product/Shoes/Shoes";
 import Cameras from "./components/Product/Cameras/Cameras";
 import Laptops from "./components/Product/Laptops/Laptops";
 import Mobiles from "./components/Product/Mobiles/Mobiles";
+import EmailPasswordAuth from "./container/SignUp/EmailPasswordAuth";
+
 // import Register from "./container/Signup/Signup";
 
 
@@ -57,6 +59,7 @@ function App() {
           <Route path="/mobiles" component={Mobiles}></Route>
           <Route path="/laptops" component={Laptops}></Route>
           <Route path="/cameras" component={Cameras}></Route>
+          <Route path="/signup" component={EmailPasswordAuth}></Route>
         </Switch>
         <Footer></Footer>
       </Router>

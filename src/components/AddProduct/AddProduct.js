@@ -141,7 +141,6 @@ function AddProduct() {
                 );
               })}
             </select>
-
                      </Form.Field>
                     
                     <Form.Field required>

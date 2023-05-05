@@ -1,6 +1,6 @@
-import firebase from "firebase";
+import firebase from "firebase/compat";
 
-const firebaseApp = firebase.initializeApp({
+ const firebaseApp = firebase.initializeApp({
    apiKey: "AIzaSyB-WUDlZGjVlUe4wqwVYTQ2ZooirvGDndg",
   authDomain: "miniproject12-76aca.firebaseapp.com",
   projectId: "miniproject12-76aca",
@@ -15,5 +15,5 @@ const auth = firebase.auth();
 const storage = firebase.storage();
 
 export { db, auth, storage };
-
+export default firebaseApp;
 

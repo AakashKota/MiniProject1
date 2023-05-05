@@ -2,6 +2,7 @@
   "name": "ecommerce_second_hand_store",
   "version": "0.1.0",
   "private": true,
+  "homepage": "retm",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,7 +11,8 @@
     "bootstrap": "^5.2.3",
     "carousel": "^0.0.3",
     "debug": "^4.3.4",
-    "firebase": "^7.24.0",
+    "firebase": "^9.21.0",
+    "firebase-auth": "^0.1.2",
     "react": "^16.13.1",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^16.13.1",

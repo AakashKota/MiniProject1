@@ -66,7 +66,8 @@ function Login() {
                 <p>Don't have an account?</p>
                 &nbsp;<Link to="/register">Register</Link>
                 </span> */}
-              
+              <p>Don't have an account?</p>
+                &nbsp;<Link to="/signup">Register</Link>
             
               </Form>
             </Card>
