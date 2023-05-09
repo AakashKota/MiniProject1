@@ -14,6 +14,7 @@ import { useStateValue } from "../../StateProvider/StateProvider";
 import { Link, useHistory } from "react-router-dom";
 
 const categories=[
+  {id:0,name:"Choose Product"},
   {id:1, name:"Mobiles"},
   {id:2, name:"Laptops"},
   {id:3, name:"Shoes"},
@@ -84,12 +85,12 @@ function AddProduct() {
 
   return (
     <div className="addProduct">
-      <Container>
+      <Container >
         <Grid centered columns={3} doubling stackable>
           {user ? (
             <Grid.Column>
-              <h2>Add Product</h2>
-              <Card>
+              <h3>Add Product</h3>
+              <Card className="Container" style={{ height:"460px", overflow: "auto"}}>
                 <Form className="addProduct__form">
                   <Form.Field required>
                     <label>Product Title</label>

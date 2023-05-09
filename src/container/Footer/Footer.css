@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.d-flex{
+    padding-top: 10px;
+}
 .footer{
     margin: "5em 0em 0em";
     left: 0;
@@ -12,4 +16,8 @@
 .footer__container{
    padding-bottom: 1rem;
    padding-top: 40px;
+}
+h2{
+   color: red ;
+   font-family: 'Oswald', sans-serif;
 }

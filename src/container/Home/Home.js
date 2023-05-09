@@ -6,6 +6,7 @@ import { db } from "../../Firebase/FirebaseConfig";
 import Slider from "./../../components/slider/Slider"
 import AdminOnlyRoute from "../../components/adminOnlyRoute/AdminOnlyRoute";
 import HomeIcons from "./HomeIcons/HomeIcons";
+// import Marquee from "react-fast-marquee";
 
 function Home() {
   const [product, setProduct] = useState([]);
@@ -20,6 +21,7 @@ function Home() {
   console.log(product);
 
   return (
+    <>
     <div className="home">
       <Slider/>
       <HomeIcons/>
@@ -51,8 +53,10 @@ function Home() {
           </Grid>
         </Container>
       )} */}
-         
+         {/* <Marquee className="d-flex"><h2>Jordans are back in stock</h2></Marquee> */}
       </div>
+      
+      </>
   );
 }
 

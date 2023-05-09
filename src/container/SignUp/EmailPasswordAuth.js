@@ -1,7 +1,8 @@
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import React, { useState } from "react";
 import firebaseApp from "../../Firebase/FirebaseConfig";
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
+import "./EmailPasswordAuth.css"
 import { Button } from "react-bootstrap";
 
 const auth = getAuth(firebaseApp);
@@ -135,7 +136,8 @@ const EmailPasswordAuth = () => {
 
 
   return (
-    <div className="registration mx-auto w-50 text-start mt-5">
+    <div className="Form" >
+    <div className="registration mx-auto w-50 text-start mt-3"> 
         <h3 className="text-primary"> {registered ? 'Login' : 'Registration'}</h3>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
 
@@ -183,6 +185,7 @@ const EmailPasswordAuth = () => {
         <b>{successful}</b>
         <b>{forgetPass}</b>
       </p>
+    </div>
     </div>
   );
 };
