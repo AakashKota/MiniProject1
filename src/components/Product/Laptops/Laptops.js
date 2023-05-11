@@ -33,31 +33,32 @@ const Laptops = () => {
     });
   };
 
-  return (
-    <div>
-      {products.map((product) => (
-        <div className="product" key={product.id}>
-          <Card className="product__card">
-            <Image className="product__image" centered src={product.imageUrl} />
-            <Card.Content>
-              <Card.Header className="product__title">{product.title}</Card.Header>
-              <Card.Meta>
-                <Rating icon="star" defaultRating={product.rating} maxRating={5} />
-              </Card.Meta>
-              <Card.Description>
-                <span className="product__price">Price: {product.price}</span>
-              </Card.Description>
-            </Card.Content>
-            <Card.Content extra className="product__footer">
-              <Button inverted className="product__button" onClick={() => addToBasket(product)}>
-                Add to Basket
-              </Button>
-            </Card.Content>
-          </Card>
-        </div>
-      ))}
-    </div>
-  );
-};
+    
+    return (
+      <div className="products-container">
+        {products.map((product) => (
+          <div className="product" key={product.id}>
+            <Card className="product__card">
+              <Image className="product__image" centered src={product.imageUrl} />
+              <Card.Content>
+                <Card.Header className="product__title">{product.title}</Card.Header>
+                <Card.Meta>
+                  <Rating icon="star" defaultRating={product.rating} maxRating={5} />
+                </Card.Meta>
+                <Card.Description>
+                  <span className="product__price">Price: {product.price}</span>
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra className="product__footer">
+                <Button inverted className="product__button" onClick={() => addToBasket(product)}>
+                  Add to Basket
+                </Button>
+              </Card.Content>
+            </Card>
+          </div>
+        ))}
+      </div>
+    );
+  };
 
 export default Laptops;

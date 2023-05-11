@@ -4,7 +4,6 @@ import { Card, Image, Rating, Button } from "semantic-ui-react";
 import "./../Product.css";
 import { useStateValue } from '../../../StateProvider/StateProvider';
 
-
 const Cameras = () => {
   const [products, setProducts] = useState([]);
 
@@ -35,7 +34,7 @@ const Cameras = () => {
   };
 
   return (
-    <div>
+    <div className="products-container">
       {products.map((product) => (
         <div className="product" key={product.id}>
           <Card className="product__card">
@@ -61,4 +60,4 @@ const Cameras = () => {
   );
 };
 
-export default Cameras
+export default Cameras;

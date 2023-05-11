@@ -34,7 +34,7 @@ const Shoes = () => {
   };
 
   return (
-    <div>
+    <div className="products-container">
       {products.map((product) => (
         <div className="product" key={product.id}>
           <Card className="product__card">
