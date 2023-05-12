@@ -14,15 +14,15 @@ export const Reducer = (state, action) => {
       };
     case "ADD_TO_BASKET":
       return {
-        ...state, //return all the state
-        basket: [...state.basket, action.item], //get previous state and action item and return new state
+        ...state, 
+        basket: [...state.basket, action.item],
       };
     case "REMOVE_FROM_BASKET":
-      let newBasket = [...state.basket]; //clone of recent basket
+      let newBasket = [...state.basket]; 
       const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.id
       );
-      //console.log(index)
+  
       if (index >= 0) {
         newBasket.splice(index, 1);
       } else {
@@ -35,4 +35,5 @@ export const Reducer = (state, action) => {
 };
 
 export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => Math.round(item.price + amount), 0);
+  basket?.reduce((amount, item) => amount + parseFloat(item.price), 0);
+

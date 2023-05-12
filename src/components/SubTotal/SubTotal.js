@@ -8,17 +8,17 @@ import './SubTotal.css'
 function SubTotal() {
     const[{basket},] = useStateValue();
   return (
-    <div>
-      <Item>
-        <Item.Content>
+    <div className="Total">
+      <div className="Total2">
+        <div className="Total3">
           <Segment raised>
             <Label color="orange" ribbon>
               Total Price
             </Label>
-            <span className="subtotal__price">${getBasketTotal(basket)}</span>
+            <span className="subtotal__price">Rs:{getBasketTotal(basket)}</span>
           </Segment>
-        </Item.Content>
-      </Item>
+        </div>
+      </div>
     </div>
   );
 }

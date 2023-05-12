@@ -17,9 +17,7 @@ const Contact = () => {
             <h1>Santosh</h1>
             <div className='divider'></div>
             <h2>Guide</h2>
-            <p>
-            Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet consectet.
-            </p>
+           
         </div>
       </div>           
       <div className="member">
@@ -27,10 +25,8 @@ const Contact = () => {
         <div className="description">
             <h1>Kota Aakash</h1>
             <div className='divider'></div>
-            <h2>Student</h2>
-            <p>
-            Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet consectet.
-            </p>
+            <h3>Student</h3>
+           
         </div>
       </div>      
       <div className="member">
@@ -38,10 +34,8 @@ const Contact = () => {
         <div className="description">
             <h1>Pandari Shrikar</h1>
             <div className='divider'></div>
-            <h2>Student</h2>
-            <p>
-            Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet consectet.
-            </p>            
+            <h3>Student</h3>
+                     
         </div>
       </div>
       <div className="member">
@@ -49,10 +43,8 @@ const Contact = () => {
         <div className="description">
             <h1>Valli Supriya</h1>
             <div className='divider'></div>
-            <h2>Student</h2>
-            <p>
-            Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet consectet.
-            </p>
+            <h3>Student</h3>
+           
         </div>
       </div>
     </div>

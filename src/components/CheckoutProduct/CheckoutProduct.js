@@ -28,7 +28,7 @@ function CheckoutProduct({ id, title, price, rating, imageUrl }) {
             <Rating icon="star" defaultRating={rating} maxRating={5} />
           </Item.Meta>
           <Item.Description>
-            <span className="checkoutProduct__price">${price}</span>
+            <span className="checkoutProduct__price">Rs:{price}</span>
           </Item.Description>
           <Item.Extra>
             <Button

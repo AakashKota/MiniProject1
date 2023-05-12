@@ -36,11 +36,13 @@
 {
     transform: scale(1.01);
 
-}#model4 {
+}
+#model4 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    margin-bottom: 10px;
   }
 #model4 .member
 {
@@ -115,30 +117,7 @@
     transition: all 1s;
 }
 
-#model4 .social-media svg:hover
-{
-    background-color: red;
-}
-
-
-
-#model4 .description h1
-{
-    color: rgba(8,61,119);
-}
-
-#model4 .description h2
-{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: #F21B3F;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-#model4 .description p
-{
-    color: rgba(8,61,119);
-    text-align: justify;
-    padding: 0 15px;
+#model4.h2{
+    color: black;
+    
 }

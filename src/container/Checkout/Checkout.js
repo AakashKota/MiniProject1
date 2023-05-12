@@ -35,15 +35,15 @@ function Checkout() {
                     )}
                     <Card fluid className="checkout__card">
                       <Item.Group>
-                        {basket?.map((item) => {
+                        {basket?.map((product) => {
                           return (
                             <CheckoutProduct
-                              key={item.id}
-                              id={item.id}
-                              title={item.title}
-                              imageUrl={item.imageUrl}
-                              price={item.price}
-                              rating={item.rating}
+                              
+                              // id={product.id}
+                              title={product.title}
+                              imageUrl={product.imageUrl}
+                              price={product.price}
+                              rating={product.rating}
                             ></CheckoutProduct>
                           );
                         })}
