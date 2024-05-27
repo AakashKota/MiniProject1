@@ -16,10 +16,7 @@ const HomeIcons = () => {
           <div className="main-banner position-relative p-3">
             <img src={Img1} className="img-fluid rounded-3" alt="main banner"/>
             <div className="main-banner-content position-absolute" style={{ marginTop: 150}}>
-              {/* <h4>SUPERCHARGED FOR PROS.</h4>
-              <h5>iPad S13+ Pro.</h5>
-              <p>From $999.00 or $41.62/mo.</p> */}
-              <Link to="/cameras">BUY NOW</Link>
+              <Link className="button" to="/cameras">BUY NOW</Link>
             </div>
           </div>
         </div>
@@ -29,9 +26,6 @@ const HomeIcons = () => {
               <img src={Img2} className="img-fluid rounded-3"
                 alt="main banner" />
               <div className="small-banner-content position-absolute" style={{ marginTop: 172 }}>
-                {/* <h4>SUPERCHARGED FOR PROS.</h4>
-                <h5>iPad S13+ Pro.</h5>
-                <p>From $999.00 or $41.62/mo.</p> */}
                 <Link className="button" to="/laptops">BUY NOW</Link>
               </div>
             </div>
@@ -44,9 +38,6 @@ const HomeIcons = () => {
               <img src={Img3} className="img-fluid rounded-3"
                 alt="main banner" />
               <div className="small-banner-content position-absolute" style={{ marginTop: 172 }}>
-                {/* <h4>SUPERCHARGED FOR PROS.</h4>
-                <h5>iPad S13+ Pro.</h5>
-                <p>From $999.00 or $41.62/mo.</p> */}
                 <Link className="button" to="/mobiles">BUY NOW</Link>
               </div>
             </div>
@@ -59,9 +50,6 @@ const HomeIcons = () => {
               <img src={Img4} className="img-fluid rounded-3"
                 alt="main banner" />
               <div className="small-banner-content position-absolute" style={{ marginTop: 172 }}>
-                {/* <h4>SUPERCHARGED FOR PROS.</h4>
-                <h5>iPad S13+ Pro.</h5>
-                <p>From $999.00 or $41.62/mo.</p> */}
                 <Link className="button" to="/shoes">BUY NOW</Link>
               </div>
             </div>

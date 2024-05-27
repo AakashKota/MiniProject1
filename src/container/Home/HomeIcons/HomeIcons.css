@@ -77,9 +77,9 @@
        font-weight: 500;
        text-transform: none;
        }
-       . small-banner-content p {
-       font-size: 18px;
-       line-height: 28px;
-       letter-spacing: 0.4;
-       color: var(--color-131921);
-       }
+
+.button{
+color: black;
+text-decoration: none;
+font-size: 16px;
+}

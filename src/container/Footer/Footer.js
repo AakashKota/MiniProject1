@@ -7,6 +7,7 @@ import Img1 from "../../Assets/Sale/Sale.png";
 import Jordan from"../../Assets/Sale/Jordan.jpg";
 import {BsExclamationTriangleFill} from "react-icons/bs";
 function Footer() {
+  
   return (
     <div className="footer">
        <Marquee className="d-flex"><img src={Img1} alt="" width={100} height={20}/> &nbsp;&nbsp;&nbsp; <strong> <h2>Jordans <img src={Jordan} alt="" height={40}/> are back in stock!!! &nbsp;&nbsp;<BsExclamationTriangleFill style={{color:"yellow",width:20,height:20}}/></h2></strong></Marquee>
@@ -19,8 +20,10 @@ function Footer() {
             alt="userPic"
           />
           <List horizontal inverted divided link size="small">
-            <List.Item as="a" href="#">
+            <List.Item as="a">
+              <a href="https://github.com/MiniProject2023/APSV.git">
               Mini Project
+              </a>
             </List.Item>
             <List.Item as="a" href="#">
               Date

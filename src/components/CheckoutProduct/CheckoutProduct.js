@@ -24,7 +24,6 @@ function CheckoutProduct({ id, title, price, rating, imageUrl }) {
         <Item.Content>
           <Item.Header className="checkoutProduct__title">{title}</Item.Header>
           <Item.Meta>
-            {" "}
             <Rating icon="star" defaultRating={rating} maxRating={5} />
           </Item.Meta>
           <Item.Description>

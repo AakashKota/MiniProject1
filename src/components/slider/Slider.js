@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { sliderData } from './slider-data';
 import "./Slider.css";
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/ai"
-import { Link } from 'react-router-dom';
+
 
 const Slider = () => {
     const [currentSlide, setCurrentSlide]=useState(0);
     const slideLength=sliderData.length;
     const autoScroll=true;
     let slideInterval;
-    let intervalTime=5000;
+    let intervalTime=4000;
 
 
 
@@ -44,7 +44,7 @@ const Slider = () => {
 
     {sliderData.map((slide,index)=>{
         const{image,heading,desc}=slide;
-        // const ne
+        
     return(
         <div key={index} className={index===currentSlide ? "slide current" : "slide"}>
 
@@ -55,9 +55,6 @@ const Slider = () => {
                     <h2> {heading}</h2>
                     <p>{desc}</p>
                     <hr/>
-                    <a href='#product'>
-                        Shop now
-                    </a>
                 </div>
             </>
         )}
